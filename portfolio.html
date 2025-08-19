@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio — Jane Doe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected projects by Jane Doe." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">JD<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About/Resume</a></li>
+          <li><a class="active" href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="themeToggle" class="icon-btn" aria-pressed="false" title="Toggle theme">
+            <img src="assets/icons/moon.svg" alt="" aria-hidden="true">
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <h1>Portfolio</h1>
+      <p class="muted">Filter by category:</p>
+      <div id="tabs" class="tabs" role="tablist" aria-label="Project categories"></div>
+      <div id="portfolioGrid" class="grid cards mt"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="tiny center">© <span id="yearNow"></span> Jane Doe.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

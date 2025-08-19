@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jane Doe — Portfolio & Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jane Doe — Frontend Engineer. Portfolio, resume, work, and contact." />
+  <meta property="og:title" content="Jane Doe — Portfolio & Resume" />
+  <meta property="og:description" content="Frontend Engineer. Portfolio, resume, work, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/cover.jpg" />
+  <link rel="icon" href="assets/img/avatar.jpg" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="application/ld+json" id="ld-person">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jane Doe",
+    "jobTitle": "Frontend Engineer",
+    "url": "https://example.com",
+    "email": "mailto:jane@example.com",
+    "image": "https://example.com/assets/img/avatar.jpg",
+    "sameAs": ["https://github.com/yourhandle","https://www.linkedin.com/in/yourhandle/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">JD<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About/Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="themeToggle" class="icon-btn" aria-pressed="false" title="Toggle theme">
+            <img src="assets/icons/moon.svg" alt="" aria-hidden="true">
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="accent">Jane Doe</span> — I craft fast, accessible web apps.</h1>
+        <p class="lead">Frontend Engineer • UI/UX • Design Systems</p>
+        <div class="cta">
+          <a class="btn primary" href="portfolio.html">View Portfolio</a>
+          <a class="btn" href="about.html#resume">See Resume</a>
+          <a class="btn ghost" href="contact.html">Hire Me</a>
+        </div>
+        <ul class="meta">
+          <li><span id="yearsExp">5+</span> years experience</li>
+          <li>Remote-friendly</li>
+          <li>Open to full‑time & freelance</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Jane Doe" loading="eager" />
+      </div>
+    </section>
+
+    <section class="container section" id="featured">
+      <div class="section-head">
+        <h2>Featured Work</h2>
+        <a class="link" href="portfolio.html">Browse all projects →</a>
+      </div>
+      <div id="featuredGrid" class="grid cards"></div>
+    </section>
+
+    <section class="container section" id="skills">
+      <h2>Skills</h2>
+      <ul id="skillsList" class="chips"></ul>
+    </section>
+
+    <section class="container section" id="testimonials">
+      <h2>What clients say</h2>
+      <div class="grid quotes" id="quotesGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Let’s build something great.</h3>
+        <p>Available for select freelance projects, remote work and consulting.</p>
+        <a class="btn primary" href="contact.html">Get in touch</a>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="list-plain">
+          <li><a href="about.html">About/Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <ul id="socialList" class="list-plain"></ul>
+      </div>
+    </div>
+    <p class="tiny center">© <span id="yearNow"></span> Jane Doe. All rights reserved.</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script type="module" src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

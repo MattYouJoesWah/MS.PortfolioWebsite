@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About & Resume — Jane Doe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Jane Doe, experience, education, skills." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">JD<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About/Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="themeToggle" class="icon-btn" aria-pressed="false" title="Toggle theme">
+            <img src="assets/icons/moon.svg" alt="" aria-hidden="true">
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <h1>About</h1>
+      <p class="lead">I’m a frontend engineer focused on performant, accessible interfaces. I enjoy design systems, delightful UX, and clean code.</p>
+      <div class="grid two">
+        <div>
+          <h3>Snapshot</h3>
+          <ul class="ticks">
+            <li>Expert in HTML/CSS/JS, React, TypeScript</li>
+            <li>Design systems & component libraries</li>
+            <li>Accessibility (WCAG 2.2 AA)</li>
+            <li>Testing (Jest, Playwright)</li>
+          </ul>
+        </div>
+        <div>
+          <img class="rounded" src="assets/img/cover.jpg" alt="Working setup" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="section-head">
+        <h2>Resume</h2>
+        <div class="stack-row">
+          <button class="btn" id="btnPrint" title="Print or save as PDF">Download as PDF</button>
+          <a class="btn ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div id="resumeRoot" class="resume">
+        <!-- Populated from data.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="tiny center">© <span id="yearNow"></span> Jane Doe.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
