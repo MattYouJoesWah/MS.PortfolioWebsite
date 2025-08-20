@@ -9,8 +9,9 @@ export const SITE = {
   socials: [
     { label: "GitHub", url: "https://github.com/MattYouJoesWah" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/matthew-serdan/" },
-    { label: "Twitter/X", url: "https://x.com/yourhandle" },
-    { label: "Dribbble", url: "https://dribbble.com/yourhandle" }
+    // - I don't have these socials - 
+    //{ label: "Twitter/X", url: "https://x.com/yourhandle" },
+    //{ label: "Dribbble", url: "https://dribbble.com/yourhandle" }
   ],
   skills: [
     "HTML5","CSS3","JavaScript","TypeScript","React","Next.js","Accessibility",
@@ -18,24 +19,34 @@ export const SITE = {
   ],
   testimonials: [
     {
-      quote: "Matthew is a rare blend of craft and pragmatism. Our app is faster and more accessible than ever.",
-      author: "Alex Chen, CTO at FastShip"
+      quote: "Exceptional leadership in driving automation projects and enhancing staff productivity.",
+      author: "Gopi Mandapati, ESSEC Business School"
+    },
+    // {
+    //   quote: "Quality is not an act, it is a habit.",
+    //   author: "Aristotle"
+    // },
+    {
+      quote: "Matthew is a dedicated professional passionate about delivering thoughtful digital solutions. ",
+      author: "Anonymous"
     },
     {
-      quote: "Delivered a polished design system ahead of schedule. A joy to collaborate with.",
-      author: "Priya Kapoor, Design Lead at Bloom"
+      quote: "Objective-focused. Our Core workflow efficiency increased significantly.",
+      author: "Anonymous, Client Company"
     },
-    {
-      quote: "Exceptionally detail‑oriented. Our Core Web Vitals jumped across the board.",
-      author: "Samir Patel, PM at Lumi"
-    }
+    // - Template for adding quote -
+    //{
+      //quote: "Exceptionally detail‑oriented. Our Core Web Vitals jumped across the board.",
+      //author: "Samir Patel, PM at Lumi"
+    //}
   ],
+  
   resume: {
     summary: "Digital Infrastructure Manager with innovative and end-user friendly solutions to increase productivity and process efficiency.",
     experience: [
       {
-        role: "Digital Infrastructure Manager, ESSEC Business School",
-        company: "FastShip",
+        role: "Digital Infrastructure Manager",
+        company: "ESSEC Business School",
         period: "2022 — Present",
         bullets: [
           "Led Team in implementing Project Management Solution 'Monday.com'",
@@ -54,7 +65,7 @@ export const SITE = {
       }
     ],
     education: [
-      { degree: "NA", school: "NA", period: "NA" },
+      //{ degree: "NA", school: "NA", period: "NA" }, For Uni Degree if applicable
       { degree: "Business Processes and Systems Engineering", school: "Temasek Polytechnic", period: "2017-2020" }
     ],
     highlights: ["Web Performance", "Design Business Process and Systems", "Accessibility", "Developer Experience"]
@@ -87,8 +98,8 @@ export const PROJECTS = [
   //   `
   // },
   {
-    id: "matgablersoln.work",
-    title: "Co-Founder, MatGabler Solutions",
+    id: "matgabler-itsolutions",
+    title: "Executive Analyst, MatGabler Solutions",
     year: 2022,
     featured: true,
     categories: ["Web","Marketing","Systems Processes"],

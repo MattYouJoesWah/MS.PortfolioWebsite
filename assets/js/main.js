@@ -219,7 +219,7 @@ function renderProjectPage(){
     );
     return;
   }
-  document.title = `${p.title} — Jane Doe`;
+  document.title = `${p.title} — Matthew SERDAN`;
   $("#crumbProject").textContent = p.title;
 
   const header = el("header", {},
@@ -270,9 +270,9 @@ function initContact(){
     const message = $("#message").value.trim();
 
     let ok = true;
-    $("#err-name").textContent = name ? "" : "Please enter your name";
-    $("#err-email").textContent = /\S+@\S+\.\S+/.test(email) ? "" : "Enter a valid email";
-    $("#err-message").textContent = message ? "" : "Tell me a bit about your project";
+    $("#err-name").textContent = name ? "" : "Name required";
+    $("#err-email").textContent = /\S+@\S+\.\S+/.test(email) ? "" : "Valid email required";
+    $("#err-message").textContent = message ? "" : "Provide some details to your reaching out";
     ok = !($("#err-name").textContent || $("#err-email").textContent || $("#err-message").textContent);
 
     if (ok) {
